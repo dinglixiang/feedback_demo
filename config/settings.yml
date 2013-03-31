@@ -1,0 +1,21 @@
+# config/settings.yml
+defaults: &defaults
+  email_from: 'zhimadlx@gmail.com'
+  email_addr: 'dlx_swpu@qq.com'
+  email_title: 'feedback'
+  #邮件配置
+  smtp: 
+    user_name: 'zhimadlx@gmail.com'
+    password: 'xxxx'
+    port: 25
+    address: 'smtp.exmail.qq.com'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
